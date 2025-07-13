@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRLS School Website</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons (e.g., hamburger menu) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./design.css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar Section -->
+    <nav class="fixed top-0 w-full bg-blue-900 bg-opacity-95 backdrop-blur-md z-50 py-4 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo and School Name -->
+            <a href="#home" class="flex items-center text-white text-2xl font-bold rounded-lg p-2 transition-colors duration-300 hover:text-blue-200">
+                <!-- Using a placeholder image for the logo. Replace with your actual logo URL. -->
+                <img src="./assest/school-logo-(1).png" alt="School Logo" class="w-16 h-16 rounded-full mr-3 -mt-4 transform transition-transform duration-300 hover:scale-105">
+                <span>RRLS</span>
+            </a>
+            <!-- Navigation Menu (Desktop) -->
+            <ul class="hidden md:flex space-x-6 lg:space-x-8" id="nav-menu-desktop">
+                <li class="nav-item"><a href="#home" class="nav-link text-white font-medium relative transition-colors duration-300 hover:text-blue-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-300 after:transition-all after:duration-300 hover:after:w-full">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link text-white font-medium relative transition-colors duration-300 hover:text-blue-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-300 after:transition-all after:duration-300 hover:after:w-full">About Us</a></li>
+                <li class="nav-item"><a href="#academics" class="nav-link text-white font-medium relative transition-colors duration-300 hover:text-blue-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-300 after:transition-all after:duration-300 hover:after:w-full">Academics</a></li>
+                <li class="nav-item"><a href="#admissions" class="nav-link text-white font-medium relative transition-colors duration-300 hover:text-blue-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-300 after:transition-all after:duration-300 hover:after:w-full">Admissions</a></li>
+                <li class="nav-item"><a href="#events" class="nav-link text-white font-medium relative transition-colors duration-300 hover:text-blue-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-300 after:transition-all after:duration-300 hover:after:w-full">Events</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link text-white font-medium relative transition-colors duration-300 hover:text-blue-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-300 after:transition-all after:duration-300 hover:after:w-full">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+        <ul class="nav-menu hidden md:hidden" id="nav-menu-mobile">
+            <li class="nav-item"><a href="#home" class="nav-link block py-3 text-white font-medium hover:bg-blue-800 transition-colors duration-300">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link block py-3 text-white font-medium hover:bg-blue-800 transition-colors duration-300">About Us</a></li>
+            <li class="nav-item"><a href="#academics" class="nav-link block py-3 text-white font-medium hover:bg-blue-800 transition-colors duration-300">Academics</a></li>
+            <li class="nav-item"><a href="#admissions" class="nav-link block py-3 text-white font-medium hover:bg-blue-800 transition-colors duration-300">Admissions</a></li>
+            <li class="nav-item"><a href="#events" class="nav-link block py-3 text-white font-medium hover:bg-blue-800 transition-colors duration-300">Events</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link block py-3 text-white font-medium hover:bg-blue-800 transition-colors duration-300">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center relative overflow-hidden pt-20 pb-10 md:pt-0 md:pb-0">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+            <!-- Hero Content (Text and Buttons) -->
+            <div class="hero-content flex-1 max-w-xl text-white relative z-10 p-6 md:p-0">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg animate-fade-in-down">Welcome to RRLS</h1>
+                <p class="text-lg md:text-xl mb-8 drop-shadow-md animate-fade-in-up">Nurturing minds, Building futures, Creating leaders</p>
+                <div class="hero-button flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in-up-delay">
+                    <button class="btn bg-blue-500 text-white py-3 px-8 rounded-full font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Apply Now</button>
+                    <button class="btn bg-transparent text-white border-2 border-white py-3 px-8 rounded-full font-semibold shadow-lg hover:bg-white hover:text-blue-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-75">Virtual Tour</button>
+                </div>
+            </div>
+
+            <!-- Floating Card (Image/Info) -->
+            <div class="hero-image flex-1 flex justify-center items-center mt-10 md:mt-0 md:ml-10 relative z-10">
+                <div class="floating-card bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-20 rounded-3xl p-8 text-center text-white shadow-2xl transform transition-transform duration-500 hover:scale-105 animate-fade-in-right">
+                    <i class="fas fa-users text-blue-300 text-5xl mb-4"></i>
+                    <h3 class="text-3xl font-bold mb-2">1500+ Students</h3>
+                    <p class="text-lg">A large and vibrant community</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-blue-800 mb-8">About RRLS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-left">
+                    <p class="text-lg leading-relaxed mb-6">
+                        RRLS is dedicated to providing a holistic education that fosters intellectual curiosity, critical thinking, and a lifelong love for learning. Our mission is to empower students to achieve their full potential and become responsible global citizens.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        With state-of-the-art facilities, experienced educators, and a vibrant community, we create an environment where every student can thrive academically, socially, and emotionally.
+                    </p>
+                    <a href="#" class="inline-block bg-blue-500 text-white py-3 px-8 rounded-full font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300">Learn More</a>
+                </div>
+                <div class="flex justify-center">
+                    <img src="./assest/school.jpg" alt="School Building" class="rounded-xl shadow-xl w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-blue-800 mb-8">Our Academic Programs</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                We offer a diverse range of academic programs designed to challenge and inspire students from various backgrounds and interests.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Program Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <i class="fas fa-flask text-blue-500 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Science & Technology</h3>
+                    <p class="text-gray-600">
+                        Engage in hands-on experiments and cutting-edge research in our modern labs.
+                    </p>
+                </div>
+                <!-- Program Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <i class="fas fa-book-open text-blue-500 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Arts & Humanities</h3>
+                    <p class="text-gray-600">
+                        Explore creativity and critical thinking through literature, history, and fine arts.
+                    </p>
+                </div>
+                <!-- Program Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <i class="fas fa-globe-americas text-blue-500 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Global Studies</h3>
+                    <p class="text-gray-600">
+                        Develop a global perspective with our international exchange programs and language courses.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-blue-800 mb-8">Admissions</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Discover our simple and transparent admission process. We welcome students who are eager to learn and grow.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md border border-gray-200">
+                    <div class="flex items-center justify-center w-16 h-16 bg-blue-500 text-white rounded-full mx-auto mb-6 text-3xl font-bold">1</div>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Inquiry & Visit</h3>
+                    <p class="text-gray-600">
+                        Submit an inquiry and schedule a campus tour to learn more about RRLS.
+                    </p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md border border-gray-200">
+                    <div class="flex items-center justify-center w-16 h-16 bg-blue-500 text-white rounded-full mx-auto mb-6 text-3xl font-bold">2</div>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Application Submission</h3>
+                    <p class="text-gray-600">
+                        Complete our online application form and submit all required documents.
+                    </p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md border border-gray-200">
+                    <div class="flex items-center justify-center w-16 h-16 bg-blue-500 text-white rounded-full mx-auto mb-6 text-3xl font-bold">3</div>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Assessment & Interview</h3>
+                    <p class="text-gray-600">
+                        Students undergo an assessment and an interview with our admissions team.
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="inline-block mt-12 bg-blue-500 text-white py-3 px-8 rounded-full font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300">View Admission Details</a>
+        </div>
+    </section>
+
+    <!-- Events Section (Placeholder) -->
+    <section id="events" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-blue-800 mb-8">Upcoming Events</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Stay updated with the latest events and activities happening at RRLS.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Event Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 text-left">
+                    <img src="https://placehold.co/400x250/d1e0fc/1e3a8a?text=Sports+Day" alt="Sports Day" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Annual Sports Day</h3>
+                    <p class="text-gray-600 text-sm mb-3"><i class="far fa-calendar-alt mr-2"></i>October 26, 2025</p>
+                    <p class="text-gray-700">Join us for a day of athletic competition and fun for all students and families.</p>
+                </div>
+                <!-- Event Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 text-left">
+                    <img src="https://placehold.co/400x250/d1e0fc/1e3a8a?text=Science+Fair" alt="Science Fair" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Science & Innovation Fair</h3>
+                    <p class="text-gray-600 text-sm mb-3"><i class="far fa-calendar-alt mr-2"></i>November 15, 2025</p>
+                    <p class="text-gray-700">Witness the incredible projects and innovations from our talented students.</p>
+                </div>
+                <!-- Event Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 text-left">
+                    <img src="https://placehold.co/400x250/d1e0fc/1e3a8a?text=Parent+Meeting" alt="Parent Meeting" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Parent-Teacher Conference</h3>
+                    <p class="text-gray-600 text-sm mb-3"><i class="far fa-calendar-alt mr-2"></i>December 5, 2025</p>
+                    <p class="text-gray-700">An opportunity to discuss student progress and academic goals with teachers.</p>
+                </div>
+            </div>
+            <a href="#" class="inline-block mt-12 bg-blue-500 text-white py-3 px-8 rounded-full font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300">View All Events</a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+            <p class="text-lg mb-12 max-w-3xl mx-auto">
+                We'd love to hear from you! Reach out to us with any questions or inquiries.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <!-- Contact Information -->
+                <div class="text-left bg-blue-800 p-8 rounded-xl shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li><i class="fas fa-map-marker-alt mr-3 text-blue-300"></i>Gaindakot 11,Pitaunji </li>
+                        <li><i class="fas fa-phone mr-3 text-blue-300"></i>+977 (9867938198)</li>
+                        <li><i class="fas fa-envelope mr-3 text-blue-300"></i>Computerengenerring@rrls.edu</li>
+                        <li><i class="fas fa-clock mr-3 text-blue-300"></i>Sun - Fri: 9:15 AM - 5:00 PM</li>
+                    </ul>
+                    <div class="flex mt-8 space-x-6 justify-center md:justify-start">
+                        <a href="#" class="text-blue-300 hover:text-white transition-colors duration-300 text-3xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-blue-300 hover:text-white transition-colors duration-300 text-3xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-300 hover:text-white transition-colors duration-300 text-3xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-300 hover:text-white transition-colors duration-300 text-3xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="bg-blue-800 p-8 rounded-xl shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-blue-700 border border-blue-600 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-blue-700 border border-blue-600 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div>
+                            <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-lg bg-blue-700 border border-blue-600 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-500 text-white py-3 px-8 rounded-full font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 RRLS. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-blue-300 transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-blue-300 transition-colors duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu after clicking a link
+                const mobileMenu = document.getElementById('nav-menu-mobile');
+                if (mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Mobile menu toggle functionality
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('nav-menu-mobile');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

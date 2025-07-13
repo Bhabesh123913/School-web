@@ -1,0 +1,51 @@
+  /* Custom font for a modern look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom background image for the hero section */
+        .hero {
+            /* Using a placeholder image for demonstration. Replace with your actual image URL. */
+            background-image: linear-gradient(135deg, rgba(30, 58, 138, 0.38) 0%, rgba(30, 64, 175, 0.45) 100%), url('../assest/school.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* Simple animation for fade-in effects */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .animate-fade-in-down { animation: fadeInDown 1s ease-out forwards; }
+        .animate-fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+        .animate-fade-in-up-delay { animation: fadeInUp 1s ease-out 0.5s forwards; }
+        .animate-fade-in-right { animation: fadeInRight 1s ease-out 0.7s forwards; }
+
+        /* Hide mobile menu by default */
+        .nav-menu.hidden {
+            display: none;
+        }
+        /* Show mobile menu when active */
+        .nav-menu.active {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgba(30, 58, 138, 0.98);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 1rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .nav-menu.active .nav-item {
+            text-align: center;
+            padding: 0.75rem 0;
+        }
